@@ -9,7 +9,7 @@
 </head>
 <body class="w-full h-screen flex">
     
-    <aside class="hidden md:block h-full w-1/4 py-12 border-r fixed start-0">
+    <aside class="h-full w-1/4 py-12 border-r fixed start-0">
 
         <div class="h-full w-3/5 m-auto flex flex-col gap-8 justify-between">
 
@@ -28,7 +28,7 @@
     
             <button class="w-full font-bold text-white text-lg bg-[#DC6400] py-2 rounded-lg" type="submit">Tweet</button>
     
-            <a class="flex flex-col lg:flex-row lg:items-center lg:justify-start gap-2 mt-4" href="#">
+            <a class="flex items-center gap-2 mt-4" href="#">
 
                 <img class="w-14 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
 
@@ -45,26 +45,51 @@
 
     </aside>
 
-    <main class="w-full md:w-2/4 md:absolute md:inset-x-1/4">
+    <main class="w-2/4 absolute inset-x-1/4">
 
-        <h2 class="border-b p-4 text-lg font-bold">Home</h2>
+        <div class="flex p-4 border-b items-center gap-6">
 
-        <div class="p-4 flex gap-4 items-start border-b">
+            <a href="./feed.html"><img src="./assets/images/arrow.png" alt="Back icon"></a>
+            
+            <div>
+                <h2 class="text-lg font-bold">Usuário Test</h2>
+                <p class="text-slate-500 text-sm">1,070 Tweets</p>
+            </div>
 
-            <img class="w-16 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
+        </div>
 
-            <form class="w-full py-2">
+        <div>
 
-                <textarea class="w-full outline-0 resize-none" placeholder="O que está acontecendo?" maxlength="55" id=""></textarea>
+            <img class="h-72 w-full" src="./assets/images/profile_banner.jpeg" alt="Profile Banner">
 
-                <div class="flex justify-between items-center">
+        </div>
 
-                    <img class="w-36 h-1/2" src="./assets/images/tweet_options.png" alt="">
-                    <button class="font-bold text-white text-md bg-[#DC6400] px-6 py-2 rounded-full" type="submit">Tweet</button>
+        <div class="flex flex-col w-full border-b px-6 py-4 gap-4 justify-start">
 
+            <div class="w-full flex justify-between">
+                <div class="flex flex-col gap-2">
+                    <img class="w-36 rounded-full -mt-24 border-4 border-white" src="./assets/images/profile_pic_example.png" alt="Profile pic">
+                    <div>
+                        <h4 class="font-bold text-2xl">Usuario Teste</h4>
+                        <p class="text-slate-500 text-sm">@userTeste</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
                 </div>
+                <button class="border h-max py-1 px-4 rounded-full border-slate-700 font-bold">Editar</button>
+            </div>
 
-            </form>
+            <div class="w-full flex gap-1">
+
+                <img class="w-5" src="./assets/images/birthday.png" alt="Birthday Icon">
+                <p class="text-sm text-slate-500">24 de Novembro</p>
+
+            </div>
+
+            <div class="mt-4 px-6 flex flex-col items-start">
+
+                <button class="after:content[' '] after:block after:flex-grow after:box-border after:w-full after:h-1.5 after:relative after:top-4 after:bg-[#1DA1F2] after:rounded-full">Tweets</button>
+    
+            </div>
 
         </div>
 
@@ -74,9 +99,9 @@
 
             <div class="flex flex-col w-full">
 
-                <div class="flex mb-1 gap-2 items-center justify-between sm:mb-0">
+                <div class="flex gap-2 items-center justify-between">
 
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div class="flex gap-2">
                         <h4 class="font-bold text-md">Designsta</h4>
                         <p class="text-sm text-slate-500">@usuarioTest · 25m</p>
                     </div>
@@ -108,16 +133,15 @@
 
         </div>
 
-
         <div class="flex w-full border-b p-4 gap-4 items-start">
 
             <img class="w-16 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
 
             <div class="flex flex-col w-full">
 
-                <div class="flex mb-1 gap-2 items-center justify-between sm:mb-0">
+                <div class="flex gap-2 items-center justify-between">
 
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div class="flex gap-2">
                         <h4 class="font-bold text-md">Designsta</h4>
                         <p class="text-sm text-slate-500">@usuarioTest · 25m</p>
                     </div>
@@ -149,16 +173,15 @@
 
         </div>
 
-
         <div class="flex w-full border-b p-4 gap-4 items-start">
 
             <img class="w-16 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
 
             <div class="flex flex-col w-full">
 
-                <div class="flex mb-1 gap-2 items-center justify-between sm:mb-0">
+                <div class="flex gap-2 items-center justify-between">
 
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div class="flex gap-2">
                         <h4 class="font-bold text-md">Designsta</h4>
                         <p class="text-sm text-slate-500">@usuarioTest · 25m</p>
                     </div>
@@ -190,16 +213,15 @@
 
         </div>
 
-
         <div class="flex w-full border-b p-4 gap-4 items-start">
 
             <img class="w-16 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
 
             <div class="flex flex-col w-full">
 
-                <div class="flex mb-1 gap-2 items-center justify-between sm:mb-0">
+                <div class="flex gap-2 items-center justify-between">
 
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div class="flex gap-2">
                         <h4 class="font-bold text-md">Designsta</h4>
                         <p class="text-sm text-slate-500">@usuarioTest · 25m</p>
                     </div>
@@ -231,16 +253,15 @@
 
         </div>
 
-
         <div class="flex w-full border-b p-4 gap-4 items-start">
 
             <img class="w-16 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
 
             <div class="flex flex-col w-full">
 
-                <div class="flex mb-1 gap-2 items-center justify-between sm:mb-0">
+                <div class="flex gap-2 items-center justify-between">
 
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div class="flex gap-2">
                         <h4 class="font-bold text-md">Designsta</h4>
                         <p class="text-sm text-slate-500">@usuarioTest · 25m</p>
                     </div>
@@ -272,16 +293,15 @@
 
         </div>
 
-
         <div class="flex w-full border-b p-4 gap-4 items-start">
 
             <img class="w-16 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
 
             <div class="flex flex-col w-full">
 
-                <div class="flex mb-1 gap-2 items-center justify-between sm:mb-0">
+                <div class="flex gap-2 items-center justify-between">
 
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div class="flex gap-2">
                         <h4 class="font-bold text-md">Designsta</h4>
                         <p class="text-sm text-slate-500">@usuarioTest · 25m</p>
                     </div>
@@ -315,7 +335,7 @@
 
     </main>
 
-    <div class="hidden md:block h-full w-1/4 border-l px-4 py-8 lg:p-8 fixed end-0">
+    <div class="h-full w-1/4 border-l p-8 fixed end-0">
 
         <form>   
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -329,13 +349,13 @@
             </div>
         </form>
 
-        <div class="w-full mt-8 bg-[#F7F9F9] px-4 lg:px-6 py-4 rounded-lg">
+        <div class="w-full mt-8 bg-[#F7F9F9] px-6 py-4 rounded-lg">
 
             <h3 class="font-bold text-lg">Usuários recente</h3>
 
-            <div class="flex flex-col gap-6 mt-4">
+            <div class="flex flex-col gap-4 mt-4">
 
-                <a class="flex flex-col lg:flex-row lg:items-center gap-2" href="#">
+                <a class="flex items-center gap-2" href="#">
 
                     <img class="w-14 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
     
@@ -348,7 +368,7 @@
     
                 </a>
     
-                <a class="flex flex-col lg:flex-row lg:items-center gap-2" href="#">
+                <a class="flex items-center gap-2 mt-4" href="#">
     
                     <img class="w-14 rounded-full" src="./assets/images/profile_pic_example.png" alt="Profile pic">
     
