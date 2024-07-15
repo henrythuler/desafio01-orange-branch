@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>OrangeX</title>
 </head>
-<body class="w-full h-screen flex">
+<body class="w-full h-screen flex flex-col md:flex-row">
     
     <aside class="hidden md:block h-full w-1/4 py-12 border-r fixed start-0">
 
@@ -57,9 +57,8 @@
 
                 <textarea class="w-full outline-0 resize-none" placeholder="O que está acontecendo?" maxlength="55" id=""></textarea>
 
-                <div class="flex justify-between items-center">
+                <div class="flex justify-end items-center">
 
-                    <img class="w-36 h-1/2" src="./assets/images/tweet_options.png" alt="">
                     <button class="font-bold text-white text-md bg-[#DC6400] px-6 py-2 rounded-full" type="submit">Tweet</button>
 
                 </div>
@@ -366,6 +365,21 @@
         </div>
 
     </div>
+
+    <ul class="fixed flex justify-around md:hidden bottom-0 mt-8">
+        <li>
+            <a href="#"><img class="" src="./assets/images/home_outline.png" alt="Home Icon"></a>
+        </li>
+        <li>
+            <a href="#"><img src="./assets/images/explore.png" alt="Explore Icon"></a>
+        </li>
+        <li>
+            <a href="#"><img src="./assets/images/notification.png" alt="Notification Icon"></a>
+        </li>
+        <li>
+            <a href="#"><img src="./assets/images/messages.png" alt="Messages Icon"></a>
+        </li>
+    </ul>
 
 </body>
 </html>
